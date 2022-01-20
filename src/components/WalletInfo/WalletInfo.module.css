@@ -1,0 +1,38 @@
+.wallet-info {
+  display: flex;
+  width: 90%;
+  max-width: 40rem;
+  padding: 1rem;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  /*display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: #4b4b4b;*/
+}
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  width: 5.5rem;
+  /* height: 5.5rem;
+  border: 1px solid #ececec;
+  background-color: #2a2a2a;*/
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ececec;
+  color: #2a2a2a;
+  align-items: center;
+  justify-content: center;
+}
+
+.balance__label {
+  font-size: 1rem;
+}
+
+.balance__amount {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
