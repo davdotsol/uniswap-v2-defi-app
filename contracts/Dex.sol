@@ -21,7 +21,7 @@ contract Dex {
 
   function swapUSDCForEth(uint tokenAmount) external payable {
     uint deadline = block.timestamp + 150;
-    address[] memory path = getEthForUSDCPath();
+    address[] memory path = getUSDCForEthPath();
     uint amountOutMin = uniswapRouter.getAmountsOut(tokenAmount, path)[1];
     IERC20(USDC).transferFrom(msg.sender, address(this), tokenAmount);
     IERC20(USDC).approve(UNISWAP_V2_ROUTER, tokenAmount);

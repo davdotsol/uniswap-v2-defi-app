@@ -16,12 +16,12 @@ module.exports = async function (deployer, networks, accounts) {
   const dex = await Dex.deployed();
 
   // Transfer USDC from unlocked account to Dex Contract
-  await usdc.transfer(dex.address, 1000000000, {
+  await usdc.transfer(dex.address, 10000000000, {
     from: UNLOCKED_ACCOUNT,
   });
 
   // Transfer USDC from unlocked account to user account
-  await usdc.transfer(accounts[1], 1000000000, {
+  await usdc.transfer(accounts[1], 10000000000, {
     from: UNLOCKED_ACCOUNT,
   });
 };

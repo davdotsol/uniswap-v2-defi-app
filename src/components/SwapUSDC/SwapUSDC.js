@@ -10,11 +10,16 @@ const SwapUSDC = (props) => {
     props.onSwap();
   };
 
+  const onTokenEntered = (event) => {
+    const value = event.target.value;
+    props.onTokenEntered(value);
+  };
+
   return (
     <Card className={classes.swap}>
       <form onSubmit={submitHandler}>
         <div className={classes.control}>
-          <input type="number" step=".1" />
+          <input type="number" step=".1" onChange={onTokenEntered} />
         </div>
         <div className={classes.actions}>
           <Button type="submit" className={classes.btn}>
