@@ -21,6 +21,12 @@ Simple decentralized application based on Solidity and Web3 that swap a simple p
 
 ### 1. Clone/Download the Repository
 
+```
+$ git clone https://github.com/davdotsol/uniswap-v2-defi-app.git
+$ cd uniswap-defi-app
+$ git checkout starter
+```
+
 ### 2. Install Dependencies:
 
 ```
